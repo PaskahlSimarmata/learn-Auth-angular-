@@ -1,0 +1,7 @@
+<p>Programming books list</p>
+<ul *ngIf="IsShown" flex flex-wrap>
+    <ng-container *ngFor="let book of books; let i=index" >
+       <app-book [book]="book"></app-book> 
+    </ng-container>
+
+</ul>
